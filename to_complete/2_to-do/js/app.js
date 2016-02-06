@@ -37,6 +37,11 @@ var Counter = React.createClass({
 
   },
 
+  _handleChange: function _handleChange(e) {
+    // Le e fait référence à l'élément qui a appelé la méthode (function). Dans ce cas c'est le "input".
+    this.setState({ value: e.target.value });
+  },
+
   render: function render() {
     var _this = this;
 
@@ -68,9 +73,7 @@ var Counter = React.createClass({
       React.createElement(
         "form",
         { onSubmit: this._ajouterTache },
-        React.createElement("input", { type: "text", value: this.state.value, onChange: function onChange(e) {
-            _this.setState({ value: e.target.value });
-          } }),
+        React.createElement("input", { type: "text", value: this.state.value, onChange: this._handleChange }),
         React.createElement(
           "button",
           { type: "submit", onClick: this._incrementCount },
