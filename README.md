@@ -2,6 +2,10 @@
 
 Exercices de base pour comprendre le fonctionnement de React Js.
 
+### Exercices
+1. [Simple counter](https://github.com/loic294/React-JS-beginner-course/tree/master/to_complete/1_counter)
+1. [Todo](https://github.com/loic294/React-JS-beginner-course/tree/master/to_complete/2_to-do) 
+
 ### Logiciels
 - Atom - https://atom.io/ (installer les packages suivants)
   - language-babel
@@ -16,8 +20,6 @@ Exercices de base pour comprendre le fonctionnement de React Js.
 - Xampp - https://www.apachefriends.org/fr/index.html
 - GitHub Desktop - https://desktop.github.com/
 - Node.JS - https://nodejs.org/en/
-
-
 
 ### Avant de coder
 - Clonez ce répertoire sur votre machine locale
@@ -39,4 +41,4 @@ Dans Chrome, fait un clic droit sur la page puis sélectionnez "Inspecter l'él�
 - Babel React ES2015 : https://babeljs.io/blog/2015/06/07/react-on-es6-plus
 
 ### Solutions
-Les solutions sont dans le dossier `completed`. Ne soyez pas vilains, allez pas voir ce dossier avant d'avoir fini les exercices! 
+Les solutions sont dans le dossier `completed`. Ne soyez pas vilains, allez pas voir ce dossier avant d'avoir fini les exercices!
