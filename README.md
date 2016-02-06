@@ -34,4 +34,8 @@ Vous pouvez ouvrir les fichiers HTML dans un navigateur pour voir le résultat.
 ### Comment déboguer
 Dans Chrome, fait un clic droit sur la page puis sélectionnez "Inspecter l'élément". Par la suite sélectionnez "Console". Les erreurs vont s'afficher là.
 
+### Documentation
+- React : https://facebook.github.io/react/docs/getting-started.html
+- Babel React ES2015 : https://babeljs.io/blog/2015/06/07/react-on-es6-plus
+
 
