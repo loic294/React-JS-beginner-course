@@ -5,7 +5,7 @@
   * Coder la méthode pour ajouter un élément à la Liste
     * Quand la tâche est ajoutée, le "input" doit être remis à un string vide
   * Coder la méthode pour retirer une tâche de la Liste
-    * Indice : La function splice est votre ami!
+    * Vous pouvez utiliser Underscore pour manipuler le array : http://underscorejs.org/#reject
 ****/
 
 var styles = {
@@ -22,20 +22,33 @@ var Todo = React.createClass({
       taches : [
         "Une tâche",
         "Une deuxième tâche"
-      ]
+      ],
+      value : ""
     };
   },
 
   _ajouterTache : function(e) {
     e.preventDefault(); // Empêche le navigateur de reload la page en soumettant le formulaire
 
-    // À coder !!!
+    var taches = this.state.taches.push(this.state.value);
+    console.log(taches); // Pour test
+
+    this.setState({
+      taches : this.state.taches,
+      value : ""
+    }, () => {
+      console.log(this.state); //Pour tester
+    });
 
   },
 
-  _supprimerTache : function() {
+  _supprimerTache : function(index) {
 
-    // À coder !!!
+      this.state.taches.splice(index, 1);
+
+      this.setState({
+        taches :  this.state.taches
+      });
 
   },
 

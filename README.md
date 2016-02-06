@@ -3,7 +3,7 @@
 Exercices de base pour comprendre le fonctionnement de React Js.
 
 ### Logiciels
-- Atom - https://atom.io/ (installer les packages suivants) 
+- Atom - https://atom.io/ (installer les packages suivants)
   - language-babel
     - Activer les options `Transpile on save` et `Create Transpiled Code` dans `Files > Settings > Packages > language-babel`   
   - jshint
@@ -16,10 +16,10 @@ Exercices de base pour comprendre le fonctionnement de React Js.
 - Xampp - https://www.apachefriends.org/fr/index.html
 - GitHub Desktop - https://desktop.github.com/
 - Node.JS - https://nodejs.org/en/
-  
 
 
-### Avant de coder 
+
+### Avant de coder
 - Clonez ce répertoire sur votre machine locale
   - Ouvrez GitHub sur votre ordi ajoutez : https://github.com/loic294/React-JS-beginner-course.git   
 - Dans le répertoire de base (où il y a le fichier package.json), accédez au terminal (CMD) et entrez `npm install`. Ceci va installer librairies requises.
@@ -38,4 +38,5 @@ Dans Chrome, fait un clic droit sur la page puis sélectionnez "Inspecter l'él�
 - React : https://facebook.github.io/react/docs/getting-started.html
 - Babel React ES2015 : https://babeljs.io/blog/2015/06/07/react-on-es6-plus
 
-
+### Solutions
+Les solutions sont dans le dossier `completed`. Ne soyez pas vilains, allez pas voir ce dossier avant d'avoir fini les exercices! 

@@ -6,7 +6,7 @@
   * Coder la méthode pour ajouter un élément à la Liste
     * Quand la tâche est ajoutée, le "input" doit être remis à un string vide
   * Coder la méthode pour retirer une tâche de la Liste
-    * Indice : La function splice est votre ami!
+    * Vous pouvez utiliser Underscore pour manipuler le array : http://underscorejs.org/#reject
 ****/
 
 var styles = {
@@ -21,20 +21,34 @@ var Todo = React.createClass({
 
   getInitialState: function getInitialState() {
     return {
-      taches: ["Une tâche", "Une deuxième tâche"]
+      taches: ["Une tâche", "Une deuxième tâche"],
+      value: ""
     };
   },
 
   _ajouterTache: function _ajouterTache(e) {
+    var _this = this;
+
     e.preventDefault(); // Empêche le navigateur de reload la page en soumettant le formulaire
 
-    // À coder !!!
+    var taches = this.state.taches.push(this.state.value);
+    console.log(taches); // Pour test
+
+    this.setState({
+      taches: this.state.taches,
+      value: ""
+    }, function () {
+      console.log(_this.state); //Pour tester
+    });
   },
 
-  _supprimerTache: function _supprimerTache() {
+  _supprimerTache: function _supprimerTache(index) {
 
-    // À coder !!!
+    this.state.taches.splice(index, 1);
 
+    this.setState({
+      taches: this.state.taches
+    });
   },
 
   _handleChange: function _handleChange(e) {
@@ -43,7 +57,7 @@ var Todo = React.createClass({
   },
 
   render: function render() {
-    var _this = this;
+    var _this2 = this;
 
     return React.createElement(
       "div",
@@ -64,7 +78,7 @@ var Todo = React.createClass({
             " -",
             React.createElement(
               "span",
-              { onClick: _this._supprimerTache.bind(null, index), style: styles.delete },
+              { onClick: _this2._supprimerTache.bind(null, index), style: styles.delete },
               "X"
             )
           );
